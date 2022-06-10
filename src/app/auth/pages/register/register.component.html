@@ -1,1 +1,71 @@
-<p>register works!</p>
+<div>
+    <mat-grid-list cols="1" rowHeight="100vh">
+        <mat-grid-tile>
+            <div class="example-container">
+                <mat-form-field appearance="fill" class="width-50">
+                    <mat-label>Primer Nombre</mat-label>
+                    <input matInput>
+                </mat-form-field>
+
+                <mat-form-field appearance="fill" class="width-50 ml-2">
+                    <mat-label>Segundo Nombre</mat-label>
+                    <input matInput>
+                </mat-form-field>
+                <br>
+                <mat-form-field appearance="fill" class="width-50">
+                    <mat-label>Primer Apellido</mat-label>
+                    <input matInput>
+                </mat-form-field>
+
+                <mat-form-field appearance="fill" class="width-50 ml-2">
+                    <mat-label>Segundo Apellido</mat-label>
+                    <input matInput>
+                </mat-form-field>
+                <br>
+                <mat-form-field appearance="fill" class="width-100">
+                    <mat-label>Número de contacto</mat-label>
+                    <input matInput placeholder="Ex. email@example.com">
+                </mat-form-field>
+                <br>
+                <mat-form-field appearance="fill" class="width-100">
+                    <mat-label>Correo electrónico</mat-label>
+                    <input matInput placeholder="Ex. email@example.com">
+                </mat-form-field>
+                <br>
+                <mat-form-field appearance="fill" class="width-100">
+                    <mat-label>Contraseña</mat-label>
+                    <input matInput [type]="hide ? 'password' : 'text'">
+                    <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                        [attr.aria-pressed]="hide">
+                        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                    </button>
+                </mat-form-field>
+                <br>
+                <label id="example-radio-group-label">Género: </label>
+                <br><br>
+                <mat-radio-group aria-label="Select an option">
+                    <mat-radio-button value="1">Masculino</mat-radio-button>
+                    <mat-radio-button class="example-radio-button" value="2">Femenino</mat-radio-button>
+                </mat-radio-group>
+                <br><br>
+
+                <br>
+                <mat-form-field appearance="fill" class="width-50">
+                    <mat-label>Fecha de nacimiento</mat-label>
+                    <input matInput>
+                </mat-form-field>
+
+                <mat-form-field appearance="fill" class="width-50 ml-2">
+                    <mat-label>Fecha de registro</mat-label>
+                    <input matInput>
+                </mat-form-field>
+
+                <mat-form-field appearance="fill" class="width-100">
+                    <mat-label>ID Usuario</mat-label>
+                    <input matInput>
+                </mat-form-field>
+
+            </div>
+        </mat-grid-tile>
+    </mat-grid-list>
+</div>
